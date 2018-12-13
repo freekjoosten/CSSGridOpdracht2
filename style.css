@@ -1,0 +1,219 @@
+* {
+    box-sizing: borderbox;
+  }
+  
+  html {
+    font-family: sans-serif;
+  }
+  
+  strong {
+    color: #888;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-decoration: none
+  }
+
+  .story {
+      font-size: 1rem;
+  }
+  
+  body {
+    margin: 0px;
+    background: #eee;
+  }
+  
+  a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .block__title {
+    text-transform: uppercase;
+  }
+  
+  /* Alles wat met de header te maken heeft - flexbox */
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-shadow: 0px 2px 6px 0px rgba(0,0,0,0.34);
+    margin-bottom: 8px;
+    padding: 0px 20px;
+    position: fixed;
+    width: 100%;
+    opacity: 0.8;
+  }
+  
+  .header a {
+    color: black;
+    font-weight: bold;
+  }
+  
+  .site-title {
+    font-size: 1.4rem;
+  }
+  
+  ul {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  li {
+    padding: 0px 20px;
+  }
+  
+  
+  /* Alles wat met main te maken heeft - grid */
+  .main {
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-areas: "hero hero hero highlight"
+                         "hero hero hero featured"
+                         "top-stories special-edition special-edition featured"
+                         "top-stories most-recent most-recent most-recent";
+    padding-top: 5rem;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1400px;
+    justify-content: end;
+    margin: auto;
+  }
+  
+  .hero {
+    grid-area: hero;
+  }
+  
+  .highlight {
+    grid-area: highlight;
+  }
+  
+  .featured {
+    grid-area: featured;
+  }
+  
+  .top-stories {
+    grid-area: top-stories;
+  }
+  
+  .special-edition {
+    grid-area: special-edition;
+  }
+  
+  .most-recent {
+    grid-area: most-recent;
+  }
+  
+  /* Onderstaande heb ik 100% afgekeken, mooi gemaakt */
+  .block__title:after {
+    content: "";
+    display: block;
+    background: black;
+    height: 1px;
+    width: 2rem;
+    position: relative;
+    top: 1rem;
+  }
+  
+  /* Standaard-styling voor elk blok */
+  .block {
+    background: white;
+    box-shadow: 0px 3px 4px -3px rgba(0,0,0,0.45);
+    padding: 20px;
+  }
+  
+  /* Styling per block */
+  .hero {
+    display: flex;
+    align-items: flex-end;
+  }
+  
+  .hero__title {
+    margin: 0px;
+    font-size: 3rem;
+    padding-bottom: 1rem;
+  }
+  
+  .hero__title:after {
+    content: "";
+    display: block;
+    background: white;
+    height: 1px;
+    width: 2rem;
+    position: relative;
+    top: 1rem;
+  }
+  
+  .hero-content {
+    max-width: 30rem;
+  }
+  
+  .hero a {
+    color: white;
+  }
+
+  .story__list {
+      list-style-type: decimal-leading-zero;
+      font-size: 2rem;
+      color: grey;
+      text-align: top;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 20px 0px 50px;
+      
+  }
+
+  .featured-stories {
+      /* padding: 00px 0px; */
+  }
+
+  .special-edition a {
+      color: white;
+  }
+
+  .block__title--special:after {
+    content: "";
+    display: block;
+    background: white;
+    height: 1px;
+    width: 2rem;
+    position: relative;
+    top: 1rem;
+  }
+
+  .block__title--special {
+    text-transform: none;
+    font-size: 1.5rem;
+  }
+
+  .story__text {
+    padding: 20px 0px;
+    max-width: 15rem; 
+  }
+
+  .recent-stories {
+    display: flex;   
+  }
+
+  .stories .story {
+      margin: 20px 0px;
+  }
+
+  .highlight a{
+      color: white;
+  }
+
+ .footer-text {
+    text-align: center;
+    text-transform: none;
+    font-size: 1.2rem;
+    color: black;
+ }
+
+ .footer {
+     text-align: center;
+     padding: 10px;
+ }
