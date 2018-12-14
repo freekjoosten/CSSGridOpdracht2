@@ -27,8 +27,8 @@
     color: black;
   }
   
-  a:hover {
-    text-decoration: underline;
+  /* a:hover {
+    text-decoration: underline; */
   }
   
   .block__title {
@@ -136,6 +136,10 @@
     font-size: 3rem;
     padding-bottom: 1rem;
   }
+
+ .hero__title:hover {
+    text-decoration: underline;
+ }
   
   .hero__title:after {
     content: "";
@@ -163,7 +167,10 @@
       display: flex;
       flex-direction: column;
       padding: 20px 20px 0px 50px;
-      
+  }
+
+  .story__text:hover {
+    text-decoration: underline;
   }
 
   .featured-stories {
@@ -195,7 +202,8 @@
   }
 
   .recent-stories {
-    display: flex;   
+    display: flex; 
+    justify-content: space-between;  
   }
 
   .stories .story {
