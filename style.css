@@ -1,5 +1,5 @@
 * {
-    box-sizing: borderbox;
+    box-sizing: border-box;
   }
   
   html {
@@ -201,13 +201,18 @@
     max-width: 15rem; 
   }
 
+  .most-recent {
+    display: flex;
+    align-items: center;
+    
+  }
   .recent-stories {
     display: flex; 
-    justify-content: space-between;  
+    justify-content: space-between;
   }
 
-  .stories .story {
-      margin: 20px 0px;
+  .recent-stories .story {
+      margin: 20px 40px 20px 0px;
   }
 
   .highlight a{
@@ -225,3 +230,6 @@
      text-align: center;
      padding: 10px;
  }
+
+ /* Tijd voor Media Queries */
+ 
