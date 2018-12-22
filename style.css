@@ -44,6 +44,7 @@
     position: fixed;
     width: 100%;
     opacity: 0.8;
+    z-index: 9999;
   }
   
   .header a {
@@ -61,7 +62,7 @@
   }
   
   li {
-    padding: 0px 20px;
+    padding: 0px 1.4rem;
   }
   
   
@@ -145,10 +146,10 @@
     padding-bottom: 1rem;
   }
 
- .hero__title:hover {
-    text-decoration: underline;
- }
-  
+ .hero__link:hover .hero__title {
+   text-decoration: underline;
+ } 
+
   .hero__title:after {
     content: "";
     display: block;
